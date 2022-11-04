@@ -1,8 +1,11 @@
 import React from 'react'
+import AuthorContainer from '../components/author/AuthorContainer'
 
 const Author = () => {
   return (
-    <div>Author</div>
+    <div>
+        <AuthorContainer />
+    </div>
   )
 }
 
