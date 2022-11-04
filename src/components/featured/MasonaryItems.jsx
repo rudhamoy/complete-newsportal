@@ -3,8 +3,8 @@ import featured from '../../assets/images/featured.jpg';
 import { AiOutlinePicRight } from "react-icons/ai";
 function MasonaryItem() {
     return (
-        <div className="h-[250px] bg-white w-[310px]">
-            <div className="h-[175px] w-[310px] overflow-hidden relative ">
+        <div className="h-[250px] bg-white w-[285px]">
+            <div className="h-[175px] w-[285px] overflow-hidden relative ">
                 <img width={370} height={175} src={featured} alt="" />
                 <div className="absolute z-[10] bottom-2 left-6 flex flex-row justify-start gap-2 items-center">
                     <AiOutlinePicRight className="text-[#ffd200] font-bold" />

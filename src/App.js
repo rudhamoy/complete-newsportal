@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Author from './pages/Author';
 import Archeive from './pages/Archeive';
 import Layout from './components/layout/Layout';
+import Category from './pages/Category';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/author" element={<Author />} />
           <Route path="/archeive" element={<Archeive />} />
+          <Route path="/category" element={<Category />} />
         </Routes>
       </BrowserRouter>
     </Layout>

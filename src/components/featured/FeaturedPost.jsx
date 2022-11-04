@@ -4,8 +4,8 @@ import featured from '../../assets/images/featured.jpg';
 import { AiOutlinePicRight } from "react-icons/ai";
 function FeaturedPost() {
     return (
-        <div className="h-[508px] bg-white w-[641px]">
-            <div className="h-[361px] w-[641px] overflow-hidden relative ">
+        <div className="h-[508px] bg-white w-[620px]">
+            <div className="h-[361px] w-[620px] overflow-hidden relative ">
                 <img width={641} height={361} src={featured} alt="" />
                 <div className="absolute z-[10] bottom-2 left-6 flex flex-row justify-start gap-2 items-center">
                     <AiOutlinePicRight className="text-[#ffd200] font-bold" />
