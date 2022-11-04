@@ -2,7 +2,7 @@ import React from 'react'
 
 const BlogContainer = () => {
     return (
-        <div className="p-4 rounded-md border bg-white my-3">
+        <div className="p-4 rounded-md border bg-white">
             <div className="flex gap-x-2">
                 <div className="">
                     <img className="w-[660px] h-[170px] rounded-sm" src="https://dailyresearchplot.com/wp-content/uploads/2022/10/1-1030-750x536.jpg" alt="" />
