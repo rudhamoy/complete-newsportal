@@ -4,7 +4,7 @@ import BlogContainer from '../layout/BlogContainer'
 
 const BlogList = () => {
     return (
-        <div className="flex flex-col gap-y-3">
+        <div className="flex flex-col gap-y-2">
             <CategoryListItem />
             <CategoryListItem />
             <CategoryListItem />

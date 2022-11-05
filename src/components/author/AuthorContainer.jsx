@@ -14,7 +14,7 @@ const AuthorContainer = () => {
         <div className="sm:w-[70%] w-full">
           <AuthorCard />
         </div>
-        <div className="sm:w-[70%] w-full my-3 border bg-gray-400 h-1"></div>
+        <div className="sm:w-[70%] w-full my-3 border bg-[#c5c5c5] h-1"></div>
 
         <div className="w-[100%] flex gap-x-3">
           {/* left */}

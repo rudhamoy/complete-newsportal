@@ -28,5 +28,12 @@ code {
   font-family: "PROXIMALIGHT";
   /*Can be any text*/
   src: local("PROXIMALIGHT"),
-    url("./fonts/PROXIMALIGHT.otf") format("truetype");
+    url("./fonts/PROXIMALIGHT.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "NUNITO";
+  /*Can be any text*/
+  src: local("NUNITO"),
+    url("./fonts/NUNITO.ttf") format("truetype");
 }

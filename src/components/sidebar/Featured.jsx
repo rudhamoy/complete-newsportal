@@ -5,11 +5,13 @@ const FeaturedCard = () => {
         <div className="p-4 rounded-md border bg-white my-3" >
             <div className="flex gap-x-2">
                 <div className="">
-                    <img className="w-[120px] rounded-md" src={couplesHug} alt="" />
+                    <img className="w-[180px] rounded-md" src={couplesHug} alt="" />
                 </div>
                 <div className="relative">
                     <p className="text-xs text-[#bf912d]">TV SERIES</p>
-                    <h1 className="font-bold text-[14px] font-futura2 text-xs">The Fabulous Season 1: Release Date Update And What We Know</h1>
+                    <h1 className="text-[#000000] text-[14px] font-[400] font-proxima text-xs">Bob Hearts Abishola Season 4
+                        Release Date, Cast, Plot, and What we know so far
+                    </h1>
                 </div>
             </div>
         </div>
