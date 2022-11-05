@@ -1,20 +1,36 @@
 import React from 'react'
-
-const ArticleContainer = ({image}) => {
+import facebookColoredIcon from '../../assets/icons/facebook-colored-icon.svg';
+import linkedinColoredIcon from '../../assets/icons/linkedin-colored-icon.svg';
+import whatsappColoredIcon from '../../assets/icons/whatsapp-colored-icon.svg';
+import twiterColoredIcon from '../../assets/icons/twiter-colored-icon.svg';
+import emailColoredIcon from '../../assets/icons/email-colored-icon.svg';
+import { AiOutlineMail } from 'react-icons/ai';
+import girlboobs from '../../assets/images/girlboobs.png'
+import beardman from '../../assets/images/beard-man.png';
+const ArticleContainer = ({ image }) => {
     return (
         <div className='bg-white rounded-md p-4 mt-3'>
-            <h1 className="text-[32px]">Kung Fu Panda: The Dragon Knight Season 2
+            <h1 className="text-[36px] font-futura2 text-[#000000] font-bold">Kung Fu Panda: The Dragon Knight Season 2
                 Potential Release Date and More
             </h1>
-            <p className="text-[20px] text-[#6d6d6d]">Kung Fu Panda: The Dragon Knight Season 2 has already not been announced and here we have its Expected Release Date, Cast, and possible Plot Info.</p>
+            <p className="text-[20px] text-[#6d6d6d] font-proxima font-[300]">Kung Fu Panda: The Dragon Knight Season 2 has already not been announced and here we have its Expected Release Date, Cast, and possible Plot Info.</p>
             <div className="w-[100%] my-3 border bg-gray-500 h-[1px]"></div>
             {/* author  */}
             <div>
-                <div className="flex items-center gap-x-2">
-                    <img src="author2.png" alt="" />
-                    <div className="text-[13px] text-[#6d6d6d]">
-                        <p className=''>by <span className="text-[16px] text-black">Manjeet Mahato</span></p>
-                        <p>Published On <span className="text-black">August 5, 2022</span> (Updated On <span className="text-black">August 5, 2022</span>)</p>
+                <div className="flex flex-row justify-between items-center gap-x-2">
+                    <div className="flex gap-x-2 items-center">
+                        <img src="author2.png" alt="" />
+                        <div className="text-[13px] text-[#6d6d6d]">
+                            <p className=''>by <span className="text-[16px] text-[#000000] font-proxima font-[600]">Manjeet Mahato</span></p>
+                            <p className="font-proxima">Published On <span className="text-black font-semibold">August 5, 2022</span> (Updated On <span className="text-black font-semibold">August 5, 2022</span>)</p>
+                        </div>
+                    </div>
+                    <div className="flex flex-row items-center gap-x-3">
+                        <img src={facebookColoredIcon} alt="" />
+                        <img src={linkedinColoredIcon} alt="" />
+                        <img src={whatsappColoredIcon} alt="" />
+                        <img src={twiterColoredIcon} alt="" />
+                        <AiOutlineMail className="text-[25px]" />
                     </div>
                 </div>
             </div>
@@ -24,7 +40,7 @@ const ArticleContainer = ({image}) => {
             </div>
 
             {/* article */}
-            <div className="text-18px mt-7">
+            <div className="text-18px mt-7 font-proxima">
                 It hasn’t been much time since Kung Fu Panda Dragon Knight was released, and Kung Fu Panda fans are already asking for season 2 as they would never be done with the cute Panda and his fighting styles.
                 <br />
                 <br />
@@ -43,7 +59,28 @@ const ArticleContainer = ({image}) => {
                     <p className="text-[#ffc700] text-[20px]">YOU MAY LIKE</p>
                     <div className="h-[2px] w-[84px] bg-[#ffc700]"></div>
                 </div>
+                <div className="flex flex-row">
+                    <div className="flex flex-row items-center">
+                        <div className="h-[100px] w-[120px] bg-black overflow-hidden">
+                            <img className="h-[100px] w-[100px]" src={girlboobs} alt="" />
+                        </div>
+                        <p className="font-futura2 text-[18px] text-white px-2">
+                            Shama Sikander flaunts in new
+                            Instagram hot Pictures
 
+                        </p>
+                    </div>
+                    <div className="flex flex-row items-center">
+                        <div className="h-[100px] w-[120px] bg-black overflow-hidden">
+                            <img className="h-[100px] w-[100px]" src={beardman} alt="" />
+                        </div>
+                        <p className="font-futura2 text-[18px] text-white px-2">
+                            Shama Sikander flaunts in new
+                            Instagram hot Pictures
+
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div className="mt-5">
@@ -131,11 +168,11 @@ const ArticleContainer = ({image}) => {
                         <p className="text-[14px] text-[#4b4b4b]">Well, a Marvel and DC Comics Nerd by Passion, Content Writer, and Designer by Profession. Completed BSc. Graphic and animation from MCU, Bhopal</p>
 
                         <div>
-                        <p className="text-[#bf912d] text-[12px]">Reach me at :</p>
-                        <div>
-                            {/* icons */}
+                            <p className="text-[#bf912d] text-[12px]">Reach me at :</p>
+                            <div>
+                                {/* icons */}
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </div>
 
