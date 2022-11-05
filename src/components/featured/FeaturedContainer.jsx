@@ -8,9 +8,9 @@ import MasonaryItem from './MasonaryItems'
 function FeaturedContainer() {
     return (
         <>
-            <div className="w-full h-full flex flex-row gap-2 justify-center">
+            <div className="w-full h-full sm:flex sm:flex-row gap-2 sm:justify-center">
                 <FeaturedPost />
-                <div className="grid grid-cols-2 gap-2">
+                <div className="grid sm:grid-cols-2 w-full gap-2">
                     <MasonaryItem />
                     <MasonaryItem />
                     <MasonaryItem />
