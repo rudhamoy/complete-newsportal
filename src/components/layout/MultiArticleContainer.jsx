@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MultiArticleContainer = ({image}) => {
+const MultiArticleContainer = ({ image }) => {
     return (
         <div className='bg-white rounded-md p-4 mt-3'>
             <h1 className="text-[32px]">Kung Fu Panda: The Dragon Knight Season 2
@@ -20,7 +20,7 @@ const MultiArticleContainer = ({image}) => {
             </div>
             {/* featured img */}
             <div className="my-3">
-                <img src={image} alt="" />
+                <img src="Layer1.png" alt="" />
             </div>
 
             {/* article */}
@@ -38,12 +38,8 @@ const MultiArticleContainer = ({image}) => {
             </div>
 
             {/* you may like */}
-            <div className="h-[145px] w-[100%] bg-[#bf912d] p-2 px-4">
-                <div className="flex items-center gap-x-2">
-                    <p className="text-[#ffc700] text-[20px]">YOU MAY LIKE</p>
-                    <div className="h-[2px] w-[84px] bg-[#ffc700]"></div>
-                </div>
-
+            <div className="my-3">
+                <img src="Layer_18.png" alt="" />
             </div>
 
             <div className="mt-5">
@@ -69,16 +65,23 @@ const MultiArticleContainer = ({image}) => {
 
                     Kung Fu Panda Dragon Knight Season 2: have the makers dropped any hints on its making?
 
-                    <img src="Layer15.png" alt="" />
                     <p>
                         All the 11 episodes received a satisfactory viewership. To summarize the entire season for you: It is about when the Legendary Po teams up with an English Knight to discover and unfold magical weapons, restore his reputation and also Save the World!
                     </p>
+
+                    <div className="my-3">
+                        <img src="Layer19.png" alt="" />
+                    </div>
 
                     <h3>Official Synopsis of Kungfu Panda:</h3>
                     <div className="bg-gray-200 p-2">
                         <p className="text-[18px] text-[#202020] font-bold">
                             Po might just be the laziest, clumsiest panda in the Valley of Peace, but he secretly dreams of becoming a kung fu legend. When the villainous snow leopard Tai Lung threatens Po's homeland, the hapless panda is chosen to fulfil an ancient prophecy and defend the Valley from attack. Training under Master Shifu, Po embarks on an epic high-kicking adventure as he sets out to thwart Tai Lung's evil plans. A DreamWorks animation.
                         </p>
+                    </div>
+
+                    <div className="my-3">
+                        <img src="Layer20.png" alt="" />
                     </div>
 
                     <div className="text-[18px] text-[#202020]">
@@ -131,11 +134,11 @@ const MultiArticleContainer = ({image}) => {
                         <p className="text-[14px] text-[#4b4b4b]">Well, a Marvel and DC Comics Nerd by Passion, Content Writer, and Designer by Profession. Completed BSc. Graphic and animation from MCU, Bhopal</p>
 
                         <div>
-                        <p className="text-[#bf912d] text-[12px]">Reach me at :</p>
-                        <div>
-                            {/* icons */}
+                            <p className="text-[#bf912d] text-[12px]">Reach me at :</p>
+                            <div>
+                                {/* icons */}
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </div>
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import couplesHug from '../../assets/images/couples_hug.png';
+
 const FeaturedCard = () => {
     return (
         <div className="p-4 rounded-md border bg-white my-3" >

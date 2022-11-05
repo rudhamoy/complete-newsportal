@@ -5,6 +5,7 @@ import Advertisement from '../ads/Advertisement'
 import SideAds from '../ads/SideAds'
 import Featured from '../sidebar/Featured'
 import MultiArticleContainer from '../layout/MultiArticleContainer'
+import RelatedPost from './RelatedPost'
 
 const MultipageNewsContainer = ({image}) => {
   return (
@@ -25,6 +26,10 @@ const MultipageNewsContainer = ({image}) => {
             <Featured />
             <SideAds bg="white" />
           </div>
+        </div>
+
+        <div className='w-[70%]'>
+        <RelatedPost />
         </div>
     </div>
   )

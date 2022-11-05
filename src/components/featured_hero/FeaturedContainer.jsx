@@ -1,13 +1,10 @@
 
-
 import React, { useEffect } from 'react'
 
 import FeaturedPost from './FeaturedPost'
 import MasonaryItem from './MasonaryItems'
 
 import { featuredMesonaryData } from "../../data/featuredMesonaryData";
-
-
 
 function FeaturedContainer() {
     useEffect(() => { }, [])

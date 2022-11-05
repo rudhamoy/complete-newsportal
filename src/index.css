@@ -12,9 +12,6 @@ code {
     monospace;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 
 @font-face {
@@ -30,3 +27,8 @@ code {
   src: local("PROXIMALIGHT"),
     url("./fonts/PROXIMALIGHT.otf") format("truetype");
 }
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
