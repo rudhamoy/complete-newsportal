@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ArticleContainer = () => {
+const ArticleContainer = ({image}) => {
     return (
         <div className='bg-white rounded-md p-4 mt-3'>
             <h1 className="text-[32px]">Kung Fu Panda: The Dragon Knight Season 2
@@ -20,7 +20,7 @@ const ArticleContainer = () => {
             </div>
             {/* featured img */}
             <div className="my-3">
-                <img src="featured-img.png" alt="" />
+                <img src={image} alt="" />
             </div>
 
             {/* article */}

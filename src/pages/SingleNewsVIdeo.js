@@ -1,12 +1,12 @@
 import React from 'react'
 import SingleNewsContainer from '../components/news/SingleNewsContainer'
 
-const SingleNews = () => {
+const SingleNewsVIdeo = () => {
   return (
     <div>
-        <SingleNewsContainer image="featured-img.png" />
+        <SingleNewsContainer image="Layer18.png" />
     </div>
   )
 }
 
-export default SingleNews
+export default SingleNewsVIdeo
