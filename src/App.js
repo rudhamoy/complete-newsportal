@@ -8,6 +8,7 @@ import Layout from './components/layout/Layout';
 import Category from './pages/Category';
 import SingleNews from './pages/SingleNews';
 import SingleNewsVIdeo from './pages/SingleNewsVIdeo';
+import SingleNewsMulti from './pages/SingleNewsMulti';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/archive" element={<Archeive />} />
           <Route path="/category" element={<Category />} />
           <Route path="/single_news" element={<SingleNews />} />
+          <Route path="/single_news_multipage" element={<SingleNewsMulti />} />
           <Route path="/single_video_news" element={<SingleNewsVIdeo />} />
         </Routes>
       </BrowserRouter>
