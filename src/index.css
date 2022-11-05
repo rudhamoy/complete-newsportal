@@ -32,3 +32,10 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "NUNITO";
+  /*Can be any text*/
+  src: local("NUNITO"),
+    url("./fonts/NUNITO.ttf") format("truetype");
+}
