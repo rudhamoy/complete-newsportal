@@ -1,10 +1,10 @@
 import React from 'react'
-import SingleNewsContainer from '../components/news/SingleNewsContainer'
+import VideoNewsContainer from '../components/news/VideoNewsContainer'
 
 const SingleNewsVIdeo = () => {
   return (
     <div>
-        <SingleNewsContainer image="Layer18.png" />
+        <VideoNewsContainer image="Layer18.png" />
     </div>
   )
 }

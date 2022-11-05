@@ -6,10 +6,10 @@ import ArticleContainer from '../layout/ArticleContainer'
 import Featured from '../sidebar/Featured'
 import RelatedPost from './RelatedPost'
 
-const SingleNewsContainer = ({image}) => {
+const VideoNewsContainer = ({image}) => {
   return (
     <div className="px-40 my-6">
-        <p className="flex items-center gap-x-1 text-[16px] text-[#6d6d6d] font-[300px]">Home <MdArrowForwardIos className="text-[#bf912d]" /> TV News <MdArrowForwardIos className="text-[#bf912d]" /> Joel McHale's Starmen Take Center Stage in Stargirl Season 3 Photos</p>
+        <p className="flex items-center gap-x-1">Home <MdArrowForwardIos className="text-[#bf912d]" /> TV News <MdArrowForwardIos className="text-[#bf912d]" /> Joel McHale's Starmen Take Center Stage in Stargirl Season 3 Photos</p>
 
         <Advertisement />
 
@@ -34,4 +34,4 @@ const SingleNewsContainer = ({image}) => {
   )
 }
 
-export default SingleNewsContainer
+export default VideoNewsContainer

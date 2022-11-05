@@ -7,66 +7,90 @@ import { BiCopyright } from 'react-icons/bi'
 
 const Footer = () => {
     return (
-        <div className="bg-gray-900 mt-4 text-gray-50">
-            <div className="flex justify-between px-40 py-10">
+        <div className="bg-[#1d1d1d] mt-4 text-gray-50">
+            <div className="flex flex-col sm:flex-row justify-between px-2 sm:px-40 py-10">
                 {/* left footer */}
-                <div className="w-[60%] flex flex-col justify-between">
+                <div className="sm:w-[60%] flex flex-col justify-between">
                     <div>
                         <div className="flex items-center gap-x-1">
-                            <h1 className="text-[#bf912d]">NEWS SECTION</h1>
-                            <div className="bg-[#bf912d] h-[2px] w-[50px]"></div>
+                            <h1 className="text-[#bf912d] font-futura2 text-[20px]">NEWS SECTIONS</h1>
+                            <div className="bg-[#bf912d] h-[2px] w-[82px]"></div>
                         </div>
                         <div>
-                            <p className="text-sm">
-                                Entertainment | Celebrity News | TV News | Technology News | Movies | Politics | Sports | General News | Trending | Bollywood | Web Stories | Business | Photos
-                            </p>
+                            <ul className="text-[18ulx] font-proxima flex justify-between flex-wrap">
+                                <li className="cursor-pointer">Entertainment</li>
+                                <li>|</li>
+                                <li className="cursor-pointer">Celebrity News</li>
+                                <li>|</li>
+                                <li className="cursor-pointer">TV News</li>
+                                <li>|</li>
+                                <li className="cursor-pointer">Technology News</li>
+                                <li>|</li>
+                                <li className="cursor-pointer">Movies</li>
+                                <li>|</li>
+                                <li className="cursor-pointer">Politics</li>
+                                <li>|</li>
+                                <li className="cursor-pointer">Sports</li>
+                                <li>|</li>
+                                <li className="cursor-pointer">General News </li>
+                                <li>|</li>
+                                <li className="cursor-pointer">Trending</li>
+                                <li>|</li>
+                                <li className="cursor-pointer">Bollywood</li>
+                                <li>|</li>
+                                <li className="cursor-pointer">Web Stories</li>
+                                <li>|</li>
+                                <li className="cursor-pointer">Business</li>
+                                <li>|</li>
+                                <li className="cursor-pointer">Photos</li>
+                            </ul>
                         </div>
                     </div>
-                    <div className="w-[100%] border-b bg-gray-50"></div>
+                    <div className="w-[100%] border-b bg-gray-50 mt-[46px] mb-[32px]"></div>
                     <div>
                         <div className="flex gap-x-2 items-center">
-                            {/* <p className="text-amber-600 text-2xl"><span className="underline">dr.</span>p</p>
-                            <p className="bg-amber-600 px-2 text-white rounded-full">Daily Research Plot</p> */}
                             <img src="logobg.png" alt="" className="w-[220px]" />
                         </div>
-                        <p className='text-sm py-3'>Daily Research Plot is a new-age media company that keeps its reader updated with the latest news headlines from the United States and all over the world. Entertainment, TV News, Shows Premiere Date, Release Date, Celebrity Gossips, and Travel - we help our readers to know about everything running around the world in every field</p>
+                        <p className='text-[16px] font-proxima text-[#dbdbdb] py-3'>Daily Research Plot is a new-age media company that keeps its reader updated with the latest news headlines from the United States and all over the world. Entertainment, TV News, Shows Premiere Date, Release Date, Celebrity Gossips, and Travel - we help our readers to know about everything running around the world in every field</p>
 
-                        <div className='flex gap-x-4 items-center my-2'>
-                            <h1 className="text-[#bf912d">FOllOW US</h1>
-                            <div className="flex gap-x-3 text-3xl mt-4">
-                                <AiOutlineInstagram />
-                                <CiFacebook />
-                                <AiOutlineTwitter />
-                                <FaLinkedinIn />
+                        <div className='flex items-center gap-x-4 my-2'>
+                            <h1 className="text-[#bf912d] font-futura2 whitespace-nowrap">FOllOW US</h1>
+                            <div className="flex gap-x-2 sm:gap-x-3 mt-4">
+                                <img className='w-[60px]' src="ins.png" alt="" />
+                                <img className='w-[60px]' src="fb.png" alt="" />
+                                <img className='w-[60px]' src="twt.png" alt="" />
+                                <img className='w-[60px]' src="yt.png" alt="" />
+                                <img className='w-[60px]' src="lnkd.png" alt="" />
+                                <img className='w-[60px]' src="rss.png" alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
                 {/* right footer */}
-                <div className="w-[30%]">
+                <div className="sm:w-[30%] mt-[60px]">
                 <div className="flex items-center gap-x-1">
-                            <h1 className="text-[#bf912d]">QUICK LINKS</h1>
+                            <h1 className="text-[#bf912d] font-futura2 text-[20px] whitespace-nowrap">QUICK LINKS</h1>
                             <div className="bg-[#bf912d] h-[2px] w-[50px]"></div>
                         </div>
-                    <ul className="text-sm">
-                        <li className="my-2">About Us</li>
-                        <li className="my-2">Contact Us</li>
-                        <li className="my-2">DMCA Policy</li>
-                        <li className="my-2">Editorial Policy</li>
-                        <li className="my-2">Fact-Checking Policy</li>
-                        <li className="my-2">Ownership, Funding, and Advertising Policy</li>
-                        <li className="my-2">Privacy Policy</li>
-                        <li className="my-2">RSS Feeds</li>
-                        <li className="my-2">Team</li>
-                        <li className="my-2">Terms and Condition</li>
-                        <li className="my-2">Write for Us</li>
+                    <ul className="text-[18px] mt-[16px] font-proxima leading-[37px]">
+                        <li className="cursor-pointer">About Us</li>
+                        <li className="cursor-pointer">Contact Us</li>
+                        <li className="cursor-pointer">DMCA Policy</li>
+                        <li className="cursor-pointer">Editorial Policy</li>
+                        <li className="cursor-pointer">Fact-Checking Policy</li>
+                        <li className="cursor-pointer">Ownership, Funding, and Advertising Policy</li>
+                        <li className="cursor-pointer">Privacy Policy</li>
+                        <li className="cursor-pointer">RSS Feeds</li>
+                        <li className="cursor-pointer">Team</li>
+                        <li className="cursor-pointer">Terms and Condition</li>
+                        <li className="cursor-pointer">Write for Us</li>
                     </ul>
                 </div>
             </div>
 
-            <div className='w-[100%] bg-black text-white py-4'>
-                <p className='text-center flex items-center justify-center'>
-                   <BiCopyright /> 2019 - 2022 Daily Research Plot All Rights Reserved.
+            <div className='w-[100%] px-2 bg-black py-4'>
+                <p className='text-center flex items-center justify-center text-[14px] sm:text-[18px] font-[300px] text-[#dbdbdb]'>
+                   <BiCopyright /> <span>2019 - 2022 Daily Research Plot All Rights Reserved.</span>
                 </p>
             </div>
         </div>
