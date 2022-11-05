@@ -13,7 +13,7 @@ function MasonaryItem() {
                 </div>
             </div>
             <div className="p-[7px]">
-                <h3 className="text-[16px] leading-5 font-semibold">Moon Knight Season 2 Production started at Cairo teased by Oscar Isaac</h3>
+                <h3 className="text-[16px] leading-5 font-bold">Moon Knight Season 2 Production started at Cairo teased by Oscar Isaac</h3>
             </div>
         </div>
     )
