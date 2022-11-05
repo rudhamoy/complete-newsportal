@@ -1,5 +1,6 @@
 import React from 'react'
 import { MdArrowForwardIos } from 'react-icons/md'
+import Advertisement from '../ads/Advertisement'
 import Ads from '../author/Ads'
 import FeaturedContainer from '../featured/FeaturedContainer'
 import BlogContainer from '../layout/BlogContainer'
@@ -19,10 +20,38 @@ function CategoryContainer() {
                         <p>Latest News Updates on <span className="font-semibold">"Money Heist"</span></p>
                     </div>
                 </div>
-                <div className=" bg-slate-300 w-[100%] h-[150px] sm:flex hidden items-center justify-center my-4">
+                {/* <div className=" bg-slate-300 w-[100%] h-[150px] sm:flex hidden items-center justify-center my-4">
                     <p className="font-bold sm:text-[40px] text-[#666]" >ADVERTISEMENT</p>
-                </div>
+                </div> */}
+
+                <Advertisement />
                 <FeaturedContainer />
+
+                < div className="flex gap-x-3 py-10" >
+
+                    <div className="w-[70%]">
+                        {/* <div className="bg-gray-400 h-[1px] w-full"></div> */}
+
+                        <BlogContainer />
+                        <BlogContainer />
+                        <BlogContainer />
+                        <BlogContainer />
+                        <BlogContainer />
+                        <BlogContainer />
+                        <BlogContainer />
+                        <BlogContainer />
+                        <BlogContainer />
+                        <div className="p-2 rounded-md border bg-[#bf912d] text-center text-white mt-8 mb-14 text-2xl">
+                            <p className="text-yellow-400">MORE STORIES</p>
+                        </div>
+                    </div>
+                    <div className="w-[30%] sm:flex hidden flex-col items-center gap-y-3">
+                        {/* <div className="w-[30%] grid grid-row-1 gap-y-3"> */}
+                        <Ads />
+                        <Featured />
+                        <Ads bg="white" />
+                    </div>
+                </div >
 
 
             </div>
@@ -36,28 +65,3 @@ export default CategoryContainer
 
 
 
-    // < div className = "flex gap-x-3 py-10" >
-
-    //                 <div className="w-[70%]">
-    //                     {/* <div className="bg-gray-400 h-[1px] w-full"></div> */}
-
-    //                     <BlogContainer />
-    //                     <BlogContainer />
-    //                     <BlogContainer />
-    //                     <BlogContainer />
-    //                     <BlogContainer />
-    //                     <BlogContainer />
-    //                     <BlogContainer />
-    //                     <BlogContainer />
-    //                     <BlogContainer />
-    //                     <div className="p-2 rounded-md border bg-[#bf912d] text-center text-white mt-8 mb-14 text-2xl">
-    //                         <p className="text-yellow-400">MORE STORIES</p>
-    //                     </div>
-    //                 </div>
-    //                 <div className="w-[30%] flex flex-col items-center gap-y-3">
-    //                     {/* <div className="w-[30%] grid grid-row-1 gap-y-3"> */}
-    //                     <Ads />
-    //                     <Featured />
-    //                     <Ads bg="white" />
-    //                 </div>
-    //             </div >

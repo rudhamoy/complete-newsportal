@@ -15,3 +15,18 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+  font-family: "FUTURA21";
+  /*Can be any text*/
+  src: local("FUTURA21"),
+    url("./fonts/FUTURA21.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PROXIMALIGHT";
+  /*Can be any text*/
+  src: local("PROXIMALIGHT"),
+    url("./fonts/PROXIMALIGHT.otf") format("truetype");
+}

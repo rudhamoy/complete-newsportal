@@ -1,19 +1,18 @@
 import React from 'react'
-import moonnight from '../../assets/images/moonnight.jpg';
-import { AiOutlinePicRight } from "react-icons/ai";
 
-function MasonaryItem() {
+
+function MasonaryItem({ image, category, icon, title }) {
     return (
-        <div className="bg-white w-full sm:h-[230px] flex sm:flex-col flex-row">
-            <div className="w-full overflow-hidden relative">
-                <img src={moonnight} alt="" />
-                <div className="absolute z-[10] bottom-2 left-6 flex flex-row justify-start gap-2 items-center">
-                    <AiOutlinePicRight className="text-[#ffd200] font-bold" />
-                    <div className="capitalize text-[12px] text-[#ffd200]  font-bold">TV SERIES</div>
+        <div className="bg-white w-full sm:h-[230px] flex sm:flex-col flex-row overflow-hidden">
+            <div className="sm:h-[160px] h-[75px] w-[350px] overflow-hidden relative">
+                <img src={image} alt="" />
+                <div className="absolute z-[10] bottom-2 sm:left-6  left-2 flex flex-row justify-start gap-2 items-center">
+                    <img src={icon} width={15} height={15} className="text-[#ffd200] font-bold" alt="" />
+                    <div className="capitalize text-[12px] text-[#ffd200]  font-bold">{category}</div>
                 </div>
             </div>
-            <div className="p-[7px]">
-                <h3 className="text-[16px] leading-5 font-bold">Moon Knight Season 2 Production started at Cairo teased by Oscar Isaac</h3>
+            <div className="sm:p-[10px] p-[6px]">
+                <h3 className="text-[18px] sm:leading-5 font-semibold  sm:line-clamp-2 line-clamp-2 font-proxima ">{title}</h3>
             </div>
         </div>
     )
