@@ -8,7 +8,7 @@ import SidebarCategorySection from '../sidebar/SidebarCategorySection';
 import SideAds from '../ads/SideAds';
 function HomeContainer() {
     return (
-        <div className="sm:mx-40 mx-2">
+        <div className="sm:mx-40 mx-2 mt-6">
             <FeaturedContainer />
             <HotspotSlider />
             <div className="flex sm:flex-row flex-col gap-x-4">
