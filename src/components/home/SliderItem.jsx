@@ -7,8 +7,8 @@ function SliderItem({ category, title, image }) {
                 <img className="h-[100px]" src={image} alt="" />
             </div>
             <div className="px-2 relative h-[80px] w-[300px]">
-                <p className="font-futura2 text-[#ffc700] font-bold text-[14px] capitalize">{category}</p>
-                <p className="font-proxima text-[16px] leading-5 text-black font-bold">
+                <p className="font-futura2 text-[#bf912d] font-bold text-[10px] capitalize">{category}</p>
+                <p className="font-proxima text-[14px] leading-5 text-black font-bold">
                     {title}
                 </p>
             </div>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import girlboobs from '../../assets/images/girlboobs.png'
 import beardman from '../../assets/images/beard-man.png';
+import kdrama from '../../assets/images/kdrama.png';
 import SliderItem from './SliderItem';
 import rightArrowIcon from '../../assets/icons/right-arrow-icon.svg';
 import leftArrowIcon from '../../assets/icons/left-arrow-icon.svg';
@@ -36,7 +37,7 @@ function HotspotSlider() {
             <div className="flex justify-between rounded-tl-lg">
                 <div className="flex items-center gap-x-2 relative  w-[160px] overflow-hidden rounded-tl-lg" >
                     <p className="text-[#ffffff] text-[20px] z-[1] px-[10px]">HOT SPOT</p>
-                    <div className="h-[100px] w-[200px] bg-[#ffc700] absolute  left-[-50px] skew-x-[-20deg]"></div>
+                    <div className="h-[100px] w-[200px] bg-[#bf912d] absolute  left-[-50px] skew-x-[-20deg]"></div>
                 </div >
                 <div className="sm:flex hidden gap-x-1 items-center">
                     <div className="h-[3px] w-10 bg-[#d7d7d7] rounded"></div>
@@ -46,15 +47,15 @@ function HotspotSlider() {
                 <div className="w-[160px]"></div>
             </div>
             <div onClick={prevSlide} className="absolute cursor-pointer top-[45%] left-2 p-2  rounded-full bg-white shadow-xl border-gray-500 z-[1]">
-                <FiChevronLeft className="text-[25px] text-[#bf912d] " />
+                <FiChevronLeft className="text-[15px] text-[#bf912d] " />
             </div>
             <div className="px-2">
                 <div className="flex py-[8px] relative  w-[100%] overflow-hidden scroll-smooth overflow-x-scroll snap-x carousal-container scrollbar-hide">
 
                     <div className="flex">
-                        <SliderItem category={'CELEBRITY'} image={beardman} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
                         <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
-                        <SliderItem category={'CELEBRITY'} image={beardman} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
+                        <SliderItem category={'TV SERIES'} image={beardman} title={"CSI: Vegas Season 2 Release Date, Cast, Plot, and Everything you need to know about the series"} />
+                        <SliderItem category={'CELEBRITY'} image={kdrama} title={"Chris Rock Responds to Will Smith’s apology video"} />
                         <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
                         <SliderItem category={'CELEBRITY'} image={beardman} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
                         <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
@@ -67,7 +68,7 @@ function HotspotSlider() {
                 </div>
             </div>
             <div onClick={nextSlide} className="absolute cursor-pointer  right-2 top-[45%] p-2  rounded-full bg-white shadow-xl border-gray-500">
-                <FiChevronRight className="text-[25px] text-[#bf912d]" />
+                <FiChevronRight className="text-[15px] text-[#bf912d]" />
             </div>
             <div className="flex sm:hidden gap-x-1 items-center pb-1 mx-[40%]">
                 <div className="h-[3px] w-10 bg-[#d7d7d7] rounded"></div>
