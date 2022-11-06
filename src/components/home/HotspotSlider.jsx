@@ -10,27 +10,29 @@ import { FiChevronRight } from 'react-icons/fi';
 
 
 function HotspotSlider() {
-    var [slideValue, setSlideValue] = useState(-400)
 
+
+    const carousalContainer = document.getElementsByClassName('carousal-container');
+
+    // console.log(carousalContainer[0].clientWidth);
     const nextSlide = (e) => {
         e.preventDefault();
-        setSlideValue(slideValue -= 400)
 
-        console.log('Next Slide')
-        console.log(slideValue);
+        let width = carousalContainer[0].clientWidth;
+        carousalContainer[0].scrollLeft = carousalContainer[0].scrollLeft - width;
+        console.log(width);
+
     }
 
     const prevSlide = (e) => {
         e.preventDefault();
-
-        setSlideValue(slideValue += 400)
-
-        console.log('Prev Slide')
-        console.log(slideValue);
+        let width = carousalContainer[0].clientWidth;
+        carousalContainer[0].scrollLeft = carousalContainer[0].scrollLeft + width;
+        console.log(width);
     }
 
     return (
-        <div className="sm:h-[145px] h-[300px] w-[100%] bg-[#ffffff] mt-4 rounded-lg z-[1]">
+        <div className="sm:h-[145px] h-[300px] w-[100%] bg-[#ffffff] mt-4 rounded-lg z-[1] relative">
             <div className="flex justify-between rounded-tl-lg">
                 <div className="flex items-center gap-x-2 relative  w-[160px] overflow-hidden rounded-tl-lg" >
                     <p className="text-[#ffffff] text-[20px] z-[1] px-[10px]">HOT SPOT</p>
@@ -43,21 +45,27 @@ function HotspotSlider() {
                 </div>
                 <div className="w-[160px]"></div>
             </div>
+            <div onClick={prevSlide} className="absolute cursor-pointer top-[45%] left-2 p-2  rounded-full bg-white shadow-xl border-gray-500 z-[1]">
+                <FiChevronLeft className="text-[25px] text-[#bf912d] " />
+            </div>
+            <div className="flex p-2 relative  w-[100%] overflow-hidden scroll-smooth overflow-x-scroll carousal-container scrollbar-hide">
 
-            <div className="flex p-2 relative  w-[100%] overflow-hidden">
-                <div className="absolute cursor-pointer top-10 left-0 p-2  rounded-full bg-white shadow-xl border-gray-500 z-[1]">
-                    <FiChevronLeft onClick={prevSlide} className="text-[25px] text-[#bf912d] " />
-                </div>
-                <div className={`flex translate-x-[${slideValue}px] w-[2400px] duration-500 ease-in-out`}>
+                <div className="flex">
+                    <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
+                    <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
+                    <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
+                    <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
+                    <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
                     <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
                     <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
                     <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
                     <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
                 </div>
 
-                <div className="absolute cursor-pointer  right-0 top-10 p-2  rounded-full bg-white shadow-xl border-gray-500">
-                    <FiChevronRight onClick={nextSlide} className="text-[25px] text-[#bf912d]" />
-                </div>
+
+            </div>
+            <div onClick={nextSlide} className="absolute cursor-pointer  right-2 top-[45%] p-2  rounded-full bg-white shadow-xl border-gray-500">
+                <FiChevronRight className="text-[25px] text-[#bf912d]" />
             </div>
             <div className="flex sm:hidden gap-x-1 items-center mx-[40%]">
                 <div className="h-[3px] w-10 bg-[#d7d7d7] rounded"></div>
