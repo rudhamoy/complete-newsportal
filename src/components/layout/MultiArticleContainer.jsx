@@ -1,4 +1,9 @@
 import React from 'react'
+import facebookColoredIcon from '../../assets/icons/facebook-colored-icon.svg';
+import linkedinColoredIcon from '../../assets/icons/linkedin-colored-icon.svg';
+import whatsappColoredIcon from '../../assets/icons/whatsapp-colored-icon.svg';
+import twiterColoredIcon from '../../assets/icons/twiter-colored-icon.svg';
+import { AiOutlineMail } from 'react-icons/ai';
 
 const MultiArticleContainer = ({ image }) => {
     return (
@@ -10,11 +15,20 @@ const MultiArticleContainer = ({ image }) => {
             <div className="w-[100%] my-3 border bg-gray-500 h-[1px]"></div>
             {/* author  */}
             <div>
-                <div className="flex items-center gap-x-2">
-                    <img src="author2.png" alt="" />
-                    <div className="text-[13px] text-[#6d6d6d] font-proxima">
-                        <p className=''>by <span className="text-[16px] font-semibold text-black">Manjeet Mahato</span></p>
-                        <p>Published On <span className="font-semibold text-black">August 5, 2022</span> (Updated On <span className="font-semibold text-black">August 5, 2022</span>)</p>
+                <div className="flex flex-row justify-between sm:items-center items-end gap-x-2">
+                    <div className="flex gap-x-2 items-center">
+                        <img src="author2.png" alt="" />
+                        <div className="text-[13px] text-[#6d6d6d]">
+                            <p className=''>by <span className="text-[16px] text-[#000000] font-proxima font-[600]">Manjeet Mahato</span></p>
+                            <p className="font-proxima">Published On <span className="text-black font-semibold">August 5, 2022</span> (Updated On <span className="text-black font-semibold">August 5, 2022</span>)</p>
+                        </div>
+                    </div>
+                    <div className="flex flex-row items-center sm:gap-x-3 gap-x-2 ml-[-60px]">
+                        <img src={facebookColoredIcon} alt="" />
+                        <img src={linkedinColoredIcon} alt="" />
+                        <img src={whatsappColoredIcon} alt="" />
+                        <img src={twiterColoredIcon} alt="" />
+                        <AiOutlineMail className="text-[25px]" />
                     </div>
                 </div>
             </div>

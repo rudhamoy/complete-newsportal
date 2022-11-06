@@ -89,24 +89,28 @@ const ArticleContainer = ({ image }) => {
                 <h2 className="text-[30px] my-3 font-futura2 font-bold">Recap from Season 1</h2>
                 <div className="text-[18px] font-proxima">
                     Developed by Mitch Watson and Peter Hastings, “Kung Fu Panda: Dragon Knight” began to premiere on July 14 this year. All the episodes of the first season were released on the same day i.e on the 14th of July.
-
+                    <br />
+                    <br />
                     It comprised 11 episodes and each had a running time of 24 minutes. Streamed on the virtual screening platform Netflix, the show was loved among children and was a decent watch for adults.
-
+                    <br />
+                    <br />
                     Let us have a recap on the episodes of the same :
+                    <br />
+                    <br />
 
-                    1. A Cause for the Paws
-                    2. The Knight’s Code
-                    3. The Lotus
-                    4. The Legend of Master Longtooth
-                    5. The Gateway to Desert
-                    6. The Lost City
-                    7. The Last Guardian
-                    8. A Thread in the Dark
-                    9. Slow Boat to England
-                    10. The Knight’s Fall Part 1
-                    11. The Knight’s Fall Part 2
-
-                    Kung Fu Panda Dragon Knight Season 2: have the makers dropped any hints on its making?
+                    <ul className="font-bold">
+                        <li> 1. A Cause for the Paws</li>
+                        <li>2. The Knight’s Code</li>
+                        <li>3. The Lotus</li>
+                        <li>4. The Legend of Master Longtooth</li>
+                        <li>5. The Gateway to Desert</li>
+                        <li>6. The Lost City</li>
+                        <li>7. The Last Guardian</li>
+                        <li> 8. A Thread in the Dark</li>
+                        <li>9. Slow Boat to England</li>
+                        <li>10. The Knight’s Fall Part 1</li>
+                        <li>11. The Knight’s Fall Part 2</li>
+                    </ul>
 
                     <img className="my-6" src="Layer15.png" alt="" />
                     <p className='text-[18px]'>
@@ -122,18 +126,20 @@ const ArticleContainer = ({ image }) => {
                         </p>
                     </div>
 
-                    <div className="text-[18px] text-[#202020] font-proxima">
+                    <div className="text-[18px] mt-6 text-[#202020] font-proxima">
                         Streamed not more than a month ago, the fans of “Kung Fu Panda: Dragon Knight” already need a season 2. With its comical and exciting situations, the show was loved by the little ones.
-
+                        <br />
+                        <br />
                         Since it has not been much time since the show made a debut, the show-runners have not yet made anything clear. However, do not let that concern you. As soon as we receive any update on season 2, we will be here to instantly tell you.
-
+                        <br />
+                        <br />
                         Since the show is a part of the Kung Fu Panda Franchise, why not watch pick up something out of it? Till we deliver you updates on season 2 grab some popcorn and enjoy the Kung Fu Panda movies with your tiny ones.
                     </div>
                 </div>
 
             </div>
 
-            <div>
+            <div className="mt-12">
                 {/* tags */}
                 <div className="flex items-center gap-x-1">
                     <p className="text-[#bf912d] text-[20px] font-futura2">TAGS</p>
@@ -142,21 +148,21 @@ const ArticleContainer = ({ image }) => {
                 {/* tag list */}
                 <div>
                     <ul className='text-[16px] flex justify-around'>
-                        <li className="bg-[#f4f4f4] font-bold font-futura2 text-[#000000] rounded-md p-[1px] px-3">Kungfu Panda</li>
-                        <li className="bg-[#f4f4f4] font-bold font-futura2 text-[#000000] rounded-md p-[1px] px-3 border-2">Kung Fu Panda: Dragon Knight Season 2</li>
-                        <li className="bg-[#f4f4f4] font-bold font-futura2 text-[#000000] rounded-md p-[1px] px-3">Netflix</li>
+                        <li className="bg-[#f4f4f4] rounded-md p-[1px] px-3">Kungfu Panda</li>
+                        <li className="bg-[#f4f4f4] rounded-md p-[1px] px-3 border-2">Kung Fu Panda: Dragon Knight Season 2</li>
+                        <li className="bg-[#f4f4f4] rounded-md p-[1px] px-3">Netflix</li>
                     </ul>
                 </div>
 
                 {/* subscribe */}
                 <div className="flex justify-center items-center my-[39px] text-[14px]">
-                    <div className="border-t border-b border-[#3f3f3f] flex flex-col sm:flex-row justify-between py-[19px]">
-                        <div className="flex items-center gap-x-2">
-                            <p>Please Subscribe us at <span className="text-[#bf912d] font-futura2 font-bold">Google News</span></p>
-                            <img className="mx-2" src="Layer16.png" alt="" />
+                    <div className="border-t border-b border-[#e4e4e4] flex justify-between gap-x-6 items-center py-[19px]">
+                        <div className="flex items-center gap-x-1">
+                            <p>Please Subscribe us at <span>Google News</span></p>
+                            <img src="Layer16.png" alt="" />
                         </div>
-                        <div className="flex gap-x-2 items-center">
-                            <p className="flex whitespace-nowrap font-bold">Follow us:</p>
+                        <div className="flex gap-x-2">
+                            <p className="whitespace-nowrap">Follow us:</p>
                             <img src="insta.png" alt="" />
                             <img src="facebook.png" alt="" />
                             <img src="twitter.png" alt="" />
@@ -168,7 +174,7 @@ const ArticleContainer = ({ image }) => {
 
                 {/* author */}
                 <div className="flex items-center bg-gray-200 p-4 gap-x-2">
-                    <img className="cursor-pointer" src="Layer17.png" alt="" />
+                    <img src="Layer17.png" alt="" />
                     <div>
                         <p className="text-[16px] text-[#bf912d]">Manjeet Mahato</p>
                         <p className="text-[14px] text-[#4b4b4b]">Well, a Marvel and DC Comics Nerd by Passion, Content Writer, and Designer by Profession. Completed BSc. Graphic and animation from MCU, Bhopal</p>
@@ -186,7 +192,7 @@ const ArticleContainer = ({ image }) => {
                     </div>
                 </div>
 
-                <div className="flex justify-center items-center mt-[32px] mb-[53px] cursor-pointer">
+                <div className="flex justify-center items-center mt-[32px] mb-[53px]">
                     <button className="rounded-[5px] w-[297px] bg-[#bf912d] text-white text-[16px] py-[11px]">POST A COMMENT</button>
                 </div>
             </div>
