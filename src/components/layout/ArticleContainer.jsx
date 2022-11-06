@@ -7,6 +7,7 @@ import emailColoredIcon from '../../assets/icons/email-colored-icon.svg';
 import { AiOutlineMail } from 'react-icons/ai';
 import girlboobs from '../../assets/images/girlboobs.png'
 import beardman from '../../assets/images/beard-man.png';
+
 const ArticleContainer = ({ image }) => {
     return (
         <div className='bg-white rounded-md p-4 mt-3'>

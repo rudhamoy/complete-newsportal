@@ -46,7 +46,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="w-[100%] border-b bg-gray-50 mt-[46px] mb-[32px]"></div>
+                    <div className="w-[100%] border-b bg-gray-50"></div>
                     <div>
                         <div className="flex gap-x-2 items-center">
                             <img src="logobg.png" alt="" className="w-[220px]" />
@@ -56,23 +56,23 @@ const Footer = () => {
                         <div className='flex items-center gap-x-4 my-2'>
                             <h1 className="text-[#bf912d] font-futura2 whitespace-nowrap">FOllOW US</h1>
                             <div className="flex gap-x-2 sm:gap-x-3 mt-4">
-                                <img className='w-[60px]' src="ins.png" alt="" />
-                                <img className='w-[60px]' src="fb.png" alt="" />
-                                <img className='w-[60px]' src="twt.png" alt="" />
-                                <img className='w-[60px]' src="yt.png" alt="" />
-                                <img className='w-[60px]' src="lnkd.png" alt="" />
-                                <img className='w-[60px]' src="rss.png" alt="" />
+                                <img className='w-[14%]' src="ins.png" alt="" />
+                                <img className='w-[14%]' src="fb.png" alt="" />
+                                <img className='w-[14%]' src="twt.png" alt="" />
+                                <img className='w-[14%]' src="yt.png" alt="" />
+                                <img className='w-[14%]' src="lnkd.png" alt="" />
+                                <img className='w-[14%]' src="rss.png" alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
                 {/* right footer */}
-                <div className="sm:w-[30%] mt-[60px]">
+                <div className="sm:w-[30%] mt-[60px] sm:mt-0">
                 <div className="flex items-center gap-x-1">
                             <h1 className="text-[#bf912d] font-futura2 text-[20px] whitespace-nowrap">QUICK LINKS</h1>
                             <div className="bg-[#bf912d] h-[2px] w-[50px]"></div>
                         </div>
-                    <ul className="text-[18px] mt-[16px] font-proxima leading-[37px]">
+                    <ul className="text-[18px] mt-[16px] font-proxima leading-[30px]">
                         <li className="cursor-pointer">About Us</li>
                         <li className="cursor-pointer">Contact Us</li>
                         <li className="cursor-pointer">DMCA Policy</li>
