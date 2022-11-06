@@ -32,7 +32,7 @@ function HotspotSlider() {
     }
 
     return (
-        <div className="sm:h-[145px]  w-[100%] bg-[#ffffff] mt-4 rounded-lg  relative">
+        <div className="w-[100%] bg-[#ffffff] mt-4 rounded-lg  relative">
             <div className="flex justify-between rounded-tl-lg">
                 <div className="flex items-center gap-x-2 relative  w-[160px] overflow-hidden rounded-tl-lg" >
                     <p className="text-[#ffffff] text-[20px] z-[1] px-[10px]">HOT SPOT</p>
@@ -49,14 +49,14 @@ function HotspotSlider() {
                 <FiChevronLeft className="text-[25px] text-[#bf912d] " />
             </div>
             <div className="px-2">
-                <div className="flex py-[10px] relative  w-[100%] overflow-hidden scroll-smooth overflow-x-scroll carousal-container scrollbar-hide">
+                <div className="flex py-[8px] relative  w-[100%] overflow-hidden scroll-smooth overflow-x-scroll snap-x carousal-container scrollbar-hide">
 
                     <div className="flex">
+                        <SliderItem category={'CELEBRITY'} image={beardman} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
                         <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
+                        <SliderItem category={'CELEBRITY'} image={beardman} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
                         <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
-                        <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
-                        <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
-                        <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
+                        <SliderItem category={'CELEBRITY'} image={beardman} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
                         <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
                         <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
                         <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
@@ -69,7 +69,7 @@ function HotspotSlider() {
             <div onClick={nextSlide} className="absolute cursor-pointer  right-2 top-[45%] p-2  rounded-full bg-white shadow-xl border-gray-500">
                 <FiChevronRight className="text-[25px] text-[#bf912d]" />
             </div>
-            <div className="flex sm:hidden gap-x-1 items-center mx-[40%]">
+            <div className="flex sm:hidden gap-x-1 items-center pb-1 mx-[40%]">
                 <div className="h-[3px] w-10 bg-[#d7d7d7] rounded"></div>
                 <div className="h-[3px] w-10 bg-[#bf912d] rounded"></div>
                 <div className="h-[3px] w-10 bg-[#d7d7d7] rounded"></div>
