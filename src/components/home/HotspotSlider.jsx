@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import girlboobs from '../../assets/images/girlboobs.png'
 import beardman from '../../assets/images/beard-man.png';
 import kdrama from '../../assets/images/kdrama.png';
-import SliderItem from './SliderItem';
 import rightArrowIcon from '../../assets/icons/right-arrow-icon.svg';
 import leftArrowIcon from '../../assets/icons/left-arrow-icon.svg';
 import { FiChevronLeft } from 'react-icons/fi';
 import { FiChevronRight } from 'react-icons/fi';
+import HotSpotSliderItem from './HotSpotSliderItem';
 
 
 
@@ -53,15 +53,15 @@ function HotspotSlider() {
                 <div className="flex py-[8px] relative  w-[100%] overflow-hidden scroll-smooth overflow-x-scroll snap-x carousal-container scrollbar-hide">
 
                     <div className="flex">
-                        <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
-                        <SliderItem category={'TV SERIES'} image={beardman} title={"CSI: Vegas Season 2 Release Date, Cast, Plot, and Everything you need to know about the series"} />
-                        <SliderItem category={'CELEBRITY'} image={kdrama} title={"Chris Rock Responds to Will Smith’s apology video"} />
-                        <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
-                        <SliderItem category={'CELEBRITY'} image={beardman} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
-                        <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
-                        <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
-                        <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
-                        <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
+                        <HotSpotSliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
+                        <HotSpotSliderItem category={'TV SERIES'} image={beardman} title={"CSI: Vegas Season 2 Release Date, Cast, Plot, and Everything you need to know about the series"} />
+                        <HotSpotSliderItem category={'CELEBRITY'} image={kdrama} title={"Chris Rock Responds to Will Smith’s apology video"} />
+                        <HotSpotSliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
+                        <HotSpotSliderItem category={'CELEBRITY'} image={beardman} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
+                        <HotSpotSliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
+                        <HotSpotSliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
+                        <HotSpotSliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
+                        <HotSpotSliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
                     </div>
 
 

@@ -11,7 +11,7 @@ function CategorySection({ category }) {
                         <p className="Futura2 text-[#bf912d] font-bold">{category}</p>
                         <div className="h-[2.5px] w-[100px] rounded bg-[#bf912d]"></div>
                     </div>
-                    <div className="flex items-center">
+                    <div className="flex items-center cursor-pointer">
                         <p className="text-[#bf912d] font-bold">READ ALL</p>
                         < FiChevronRight className="text-[#bf912d] text-[25px]" />
                     </div>

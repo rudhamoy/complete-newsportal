@@ -9,7 +9,7 @@ function SmallerCardItems() {
                 </div>
                 <div className="relative flex flex-col justify-between">
                     <p className="text-xs text-[#bf912d] font-bold">TV SERIES</p>
-                    <h1 className="text-[#000000] text-[14px] font-bold font-proxima text-xs mt-[-25px]">Bob Hearts Abishola Season 4
+                    <h1 className="text-[#000000] text-[14px] font-bold font-proxima text-xs">Bob Hearts Abishola Season 4
                         Release Date, Cast, Plot, and What we know so far
                     </h1>
                     <p className="text-xs text-[#474747]">AUGUST 5, 2022</p>
