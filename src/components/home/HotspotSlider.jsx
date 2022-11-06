@@ -14,15 +14,17 @@ function HotspotSlider() {
 
     const nextSlide = (e) => {
         e.preventDefault();
-
         setSlideValue(slideValue -= 400)
+
         console.log('Next Slide')
         console.log(slideValue);
     }
 
     const prevSlide = (e) => {
         e.preventDefault();
+
         setSlideValue(slideValue += 400)
+
         console.log('Prev Slide')
         console.log(slideValue);
     }
@@ -46,11 +48,11 @@ function HotspotSlider() {
                 <div className="absolute cursor-pointer top-10 left-0 p-2  rounded-full bg-white shadow-xl border-gray-500 z-[1]">
                     <FiChevronLeft onClick={prevSlide} className="text-[25px] text-[#bf912d] " />
                 </div>
-                <div className={`flex translate-x-[${slideValue}px] duration-500 ease-in-out`}>
+                <div className={`flex translate-x-[${slideValue}px] w-[2400px] duration-500 ease-in-out`}>
                     <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
                     <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
                     <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
-
+                    <SliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
                 </div>
 
                 <div className="absolute cursor-pointer  right-0 top-10 p-2  rounded-full bg-white shadow-xl border-gray-500">
