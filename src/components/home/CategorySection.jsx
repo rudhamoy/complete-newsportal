@@ -4,7 +4,7 @@ import CategoryListItem from '../category/CategoryListItem';
 import SmallerCardItems from './SmallerCardItems';
 function CategorySection({ category }) {
     return (
-        <div className="bg-white my-2 sm:w-[70%] w-full rounded">
+        <div className="bg-white my-2 w-full rounded">
             <div className="p-2">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center gap-x-2">
