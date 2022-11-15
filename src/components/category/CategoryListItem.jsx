@@ -6,11 +6,11 @@ function CategoryListItem({ width }) {
         <>
             <div className={`p-[17px] mb-3 rounded-md border bg-white cursor-pointer sm:h-[201px]  sm:w-[${width ? width : "837px"}] flex justify-center `}>
                 <div className="flex sm:flex-row flex-col gap-x-2">
-                    <div className=" relative">
+                    <div className="relative">
                         <div className="w-[85vw] sm:w-[315px] h-[165px] rounded-[5px] overflow-hidden">
                             <img className="w-[100%] h-[100%]" src={cartoon} alt="" />
                         </div>
-
+                        <div className="absolute top-0 left-0 bottom-0 right-0 bg-gradient-to-t from-[#000000] rounded"></div>
                         <div className="absolute  z-[10] bottom-2 sm:left-2  left-2 flex flex-row justify-start gap-1 items-center drop-shadow-3xl ">
                             <img src={videoIcon} width={15} height={15} className="text-[#ffd200] font-bold" alt="" />
                             <div className="capitalize text-[8px] text-[#ffd200] font-nunitoSans  font-bold">NOVEMBER 2, 2022</div>
