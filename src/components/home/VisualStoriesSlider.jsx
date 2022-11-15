@@ -90,7 +90,7 @@ const [currentIndex, setCurrentIndex] = useState(0)
 
             <div className="flex justify-between rounded-tl-lg rounded">
                 <div className="flex items-center gap-x-2">
-                    <p className="text-[#bf912d] font-semibold font-nunitoSans text-[18px]">VISUAL STORIES</p>
+                    <p className="text-[#bf912d] font-semibold font-nunitoSans text-[22px]">VISUAL STORIES</p>
                     <div className="h-[2px] w-[100px] rounded bg-[#bf912d]"></div>
                 </div>
                 <div className="text-[#bf912d] font-semibold font-nunitoSans flex items-center">

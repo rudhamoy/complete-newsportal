@@ -8,11 +8,11 @@ function SmallerCardItems() {
                     <img className="w-[100%] h-[100%] rounded-md" src={couplesHug} alt="" />
                 </div>
                 <div className="relative flex flex-col justify-between">
-                    <p className="text-xs text-[#bf912d] font-bold">TV SERIES</p>
-                    <h1 className="text-[#000000] text-[16px] font-bold font-nunitoSans">Bob Hearts Abishola Season 4
+                    <p className="text-[10px] text-[#bf912d] font-bold">TV SERIES</p>
+                    <h2 className="text-[#000000] text-[16px] leading-[18px] font-nunitoSans font-semibold">Bob Hearts Abishola Season 4
                         Release Date, Cast, Plot, and What we know so far
-                    </h1>
-                    <p className="text-xs text-[#474747]">AUGUST 5, 2022</p>
+                    </h2>
+                    <p className="text-[10px] text-[#737373]">AUGUST 5, 2022</p>
                 </div>
             </div>
         </div>
