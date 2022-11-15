@@ -10,12 +10,13 @@ function SideBarItem({ category, title, image }) {
                     <img src={videoIcon} width={15} height={15} className="text-[#ffd200] font-bold" alt="" />
                     {/* <div className="capitalize text-[8px] text-[#ffd200] font-nunitoSans  font-bold">NOVEMBER 2, 2022</div> */}
                 </div>
+                    <div className='fadeBottom absolute bottom-0 left-0 right-0' />
             </div>
             <div className="px-2 relative h-[80px] w-[250px]">
-                <p className="font-futura2 text-[#bf912d] font-bold text-[10px] capitalize">{category}</p>
-                <p className="font-nunitoSans text-[16px] leading-5 text-black font-semibold">
+                <p className="font-nunitoSans text-[#bf912d] font-bold text-[10px] capitalize mb-[5px]">{category}</p>
+                <h3 className="font-nunitoSans text-[16px] leading-[18px] text-black font-semibold">
                     {title}
-                </p>
+                </h3>
             </div>
         </div>
 
