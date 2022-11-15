@@ -1,47 +1,25 @@
 import React, { useState } from 'react'
 import { CgMenuRound } from 'react-icons/cg'
-import { BsShare } from 'react-icons/bs'
+import { BsSearch } from 'react-icons/bs'
 import { AiOutlineSearch } from 'react-icons/ai'
 import { BiChevronDown } from 'react-icons/bi'
 import { FcMenu } from 'react-icons/fc'
 import { BiSearch } from 'react-icons/bi'
+import { MdClose } from 'react-icons/md'
 
 import './navigation.css'
+import MobileNav from './MobileNav'
 
 const HeaderNav = ({ setShowMenu }) => {
     const [clicked, setClicked] = useState(false)
     const [onClicked, setOnClicked] = useState(false)
     const [clickFollow, setClickFollow] = useState(false)
+    const [showSearch, setShowSearch] = useState(false)
 
     return (
         <>
-            <div className="sm:hidden bg-white shadow-md p-2">
-                <div className=" w-[100%] flex justify-between items-center">
-                    {/* mobile menu */}
-                    <div className="flex items-center gap-x-3 w-[72%]">
-                        <div role="button" onClick={() => setShowMenu(true)} className="">
-                            <img src="mobileMenu.png" alt="" className="h-[35px]" />
-                        </div>
-                        <img src="realLogo.png" className="h-[30px]" alt="" />
-                    </div>
-                    <div className="flex items-center justify-around border-l w-[28%]">
-                        <img src="mobileShare.png" alt="" className="h-[35px]" />
-                        <img src="mobileSearch.png" alt="" className="h-[35px]" />
-                    </div>
-                </div>
-                <div className="flex items-center gap-x-3 mt-2">
-                    <div role="button">
-                        <img src="home.png" alt="" className="h-[20px] w-[20px]" />
-                    </div>
-                    <div className='uppercase flex items-center gap-x-3 text-[12px] font-futura2'>
-                        <p>Celebrity</p>
-                        <p>Entertainment</p>
-                        <p className="whitespace-nowrap">Tv News</p>
-                        <p className="whitespace-nowrap">Web Stories</p>
-                    </div>
-                </div>
-            </div>
-            <div className='hidden sm:flex justify-center p-3 bg-white shadow-md '>
+            <MobileNav setShowMenu={setShowMenu} setClickFollow={setClickFollow} clickFollow={clickFollow} />
+            <div className='hidden sm:flex justify-center p-3 bg-white shadow-md relative'>
                 <div className="w-[1264px] flex justify-between items-center">
                     {/* DESKTOP */}
 
@@ -54,14 +32,14 @@ const HeaderNav = ({ setShowMenu }) => {
                         <div className="flex items-center justify-around font-semibold text-[16px] px-6 uppercase">
                             <div className="cursor-pointer">CELEBRITY</div>
                             <div className="dropdown relative">
-                                <div 
-                                role="button"
-                                onMouseEnter={() => {
-                                    setClicked(true)
-                                }}
-                                onMouseLeave={() => {
-                                    setClicked(false)
-                                }}
+                                <div
+                                    role="button"
+                                    onMouseEnter={() => {
+                                        setClicked(true)
+                                    }}
+                                    onMouseLeave={() => {
+                                        setClicked(false)
+                                    }}
                                 >
                                     <a className="flex items-center">ENTERTAINMENT <BiChevronDown className="text-lg" /></a>
                                 </div>
@@ -81,9 +59,9 @@ const HeaderNav = ({ setShowMenu }) => {
                                 <div role="button" onMouseEnter={() => {
                                     setOnClicked(true)
                                 }}
-                                onMouseLeave={() => {
-                                    setOnClicked(false)
-                                }}>
+                                    onMouseLeave={() => {
+                                        setOnClicked(false)
+                                    }}>
                                     <a className="flex items-center">News <BiChevronDown className="text-lg" /></a>
                                 </div>
                                 {onClicked === true && (
@@ -111,6 +89,7 @@ const HeaderNav = ({ setShowMenu }) => {
                                 <img src="menuu.png" alt="" />
                             </div>
 
+                            {/* follow/share */}
                             <div className="relative">
                                 <div role="button" onClick={() => {
                                     setClickFollow(!clickFollow)
@@ -144,10 +123,31 @@ const HeaderNav = ({ setShowMenu }) => {
                                     </div>
                                 )}
                             </div>
-                            <img src="searchh.png" alt="" />
+                            {/* search */}
+                            <div
+                                role="button"
+                                onClick={() => {
+                                    setShowSearch(!showSearch)
+                                }}
+                            >
+                                <img src="searchh.png" alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>
+                {showSearch === true && (
+                    <div className='absolute top-0 left-0 right-0 bottom-0 bg_transparent flex justify-center items-center'>
+                        <div className="">
+                            <div className="flex items-center">
+                                <div className='border rounded-md px-2 h-[40px] w-[450px] flex items-center gap-x-1 bg-white'>
+                                    <BsSearch />
+                                    <input type="text" className="bg-white h-[100%] w-[100%] outline-none" />
+                                </div>
+                                <MdClose onClick={() => setShowSearch(false)} className="text-[#bf912d] text-3xl" />
+                            </div>
+                        </div>
+                    </div>
+                )}
             </div>
         </>
     )
