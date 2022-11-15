@@ -9,24 +9,24 @@ import SideBarItem from './SideBarItem';
 
 function SidebarCategorySection({ category }) {
     return (
-        <div className="bg-white my-2 w-full rounded">
+        <div className="bg-white mt-[30px] h-[560px] w-[95vw] sm:w-[404px] rounded-[5px] drop-shadow-container">
             <div className="p-2">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center gap-x-2">
-                        <p className="Futura2 text-[#bf912d] font-bold">{category}</p>
+                        <p className="font-nunitoSans text-[#bf912d] font-semibold">{category}</p>
                         <div className="h-[2.5px] w-[100px] rounded bg-[#bf912d]"></div>
                     </div>
 
                 </div>
-                <div className="">
+                <div className="mt-[19px] flex flex-col gap-y-[10px]">
                     <SideBarItem category={"TV SERIES"} title={"Bob Hearts Abishola Season 4 Release Date, Cast, Plot, and What we know so far"} image={huggin} />
                     <SideBarItem category={"TV SERIES"} title={"Bob Hearts Abishola Season 4 Release Date, Cast, Plot, and What we know so far"} image={huggin} />
                     <SideBarItem category={"TV SERIES"} title={"Bob Hearts Abishola Season 4 Release Date, Cast, Plot, and What we know so far"} image={huggin} />
                     <SideBarItem category={"TV SERIES"} title={"Bob Hearts Abishola Season 4 Release Date, Cast, Plot, and What we know so far"} image={huggin} />
 
                 </div>
-                <div class="flex items-center justify-center">
-                    <p className="text-[#bf912d] font-semibold text-[16px]">READ ALL</p>
+                <div className="flex items-center justify-center mt-[13px]">
+                    <p className="text-[#bf912d] font-semibold font-nunitoSans text-[16px]">READ ALL</p>
                     <FiChevronRight className="text-[#bf912d] text-[18px]" />
                 </div>
             </div>

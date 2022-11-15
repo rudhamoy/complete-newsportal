@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import CategoryListItem from '../category/CategoryListItem';
 import FeaturedContainer from '../featured_hero/FeaturedContainer';
 import MoreButton from '../utils/MoreButton';
@@ -7,33 +7,46 @@ import HotspotSlider from './HotspotSlider';
 import SidebarCategorySection from '../sidebar/SidebarCategorySection';
 import SideAds from '../ads/SideAds';
 import VisualStoriesSlider from './VisualStoriesSlider';
+import { useInView } from 'react-intersection-observer';
+
 function HomeContainer() {
+
+    const { ref, inView } = useInView()
+
+    console.log("inView = ", inView)
+
     return (
-        <div className="sm:mx-40 mx-2 mt-6">
-            <FeaturedContainer />
-            <HotspotSlider />
-            <div className="flex sm:flex-row flex-col gap-x-4">
-                <div className="sm:w-[70%] w-full">
+        <div className="sm:mx-0 mx-2 sm:mt-6 flex flex-col justify-center items-center">
+            <div className="pb-[27px] sm:pt-[37px] flex flex-col justify-center items-center">
+                <FeaturedContainer />
+                <HotspotSlider />
+            </div>
+            <div className="flex flex-col sm:flex-row justify-between w-[95vw] sm:w-[1264px]">
+                {/* content */}
+                <div className="">
                     <CategorySection category={"ENTERTAINMENT"} />
                     <VisualStoriesSlider />
                     <CategorySection category={"TV SERIES NEWS"} />
                     <CategorySection category={"TECHNOLOGY"} />
                     <CategorySection category={"ANIME NEWS"} />
+                    <div className="hidden sm:block">
                     <MoreButton title={"MORE STORIES"} />
                     <CategoryListItem />
                     <CategoryListItem />
                     <CategoryListItem />
                     <CategoryListItem />
                     <CategoryListItem />
+                    </div>
                 </div>
-                <div className="sm:w-[30%] w-full  rounded">
+                {/* sidebar */}
+                <div className="rounded">
                     <SidebarCategorySection category={"CELEBRITY GOSSIPS"} />
                     <div className="h-[360px]">
                         <SideAds bg={"white"} />
                     </div>
                     <SidebarCategorySection category={"MOVIES NEWS"} />
                     <SidebarCategorySection category={"GAMES & SPORTS"} />
-                    <div className="h-[600px]">
+                    <div className={`h-[600px] ${inView === true ? 'sticky top-10' : ''}`} ref={ref}>
                         <SideAds bg={"white"} />
                     </div>
                 </div>

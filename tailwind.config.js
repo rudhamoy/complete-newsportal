@@ -9,8 +9,13 @@ module.exports = {
         futura2: ["FUTURA21"],
         proxima: ["PROXIMALIGHT"],
         nunito: ["NUNITO"],
+        nunitoSans: ["NUNITOSANS"],
         newsbt: ["NEWSBT"]
       },
+      dropShadow: {
+        '3xl': '0px 3px 2.5px rgba(0,0,0,0.35)',
+        'container': '0px 1px 2.5px rgba(0,0,0,0.2)',
+      }
     },
   },
   plugins: [
