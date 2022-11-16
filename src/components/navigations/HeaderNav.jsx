@@ -31,18 +31,19 @@ const HeaderNav = ({ setShowMenu }) => {
                     <div className="w-[65%] h-[100%]">
                         <div className="flex items-center justify-around font-semibold text-[16px] px-6 uppercase h-[100%]">
                             <div className="cursor-pointer">CELEBRITY</div>
+
                             <div
-                                className="dropdown relative"
+                                className="dropdown relative h-[100%]"
                             >
                                 <div
                                     role="button"
                                     onMouseEnter={() => {
                                         setClicked(true)
                                     }}
-                                //  onMouseLeave={() => {
-                                //      setClicked(false)
-                                //  }}
-                                // className="bg-yellow-200 flex justify-center items-center"
+                                 onMouseLeave={() => {
+                                     setClicked(false)
+                                 }}
+                                className=" flex justify-center items-center h-[100%]"
                                 >
                                     <a className="flex items-center">ENTERTAINMENT <BiChevronDown className="text-lg" /></a>
                                 </div>
@@ -56,7 +57,7 @@ const HeaderNav = ({ setShowMenu }) => {
                                             setClicked(false)
                                         }}
                                     >
-                                        <ul className="absolute uppercase top-10 z-50 -right-10 bg-white w-[240px] p-2 border-t-4 border-[#bf912d] shadow-md rounded-sm">
+                                        <ul className="absolute uppercase  z-50 -right-10 bg-white w-[240px] p-2 border-t-4 border-[#bf912d] shadow-md rounded-sm">
                                             <li><a href="#">Politics</a></li>
                                             <li><a href="#">Technology</a></li>
                                             <li><a href="#">Gaming</a></li>
@@ -66,15 +67,16 @@ const HeaderNav = ({ setShowMenu }) => {
                                     </div>
                                 )}
                             </div>
-                            <div className="dropdown relative">
+                            <div className="dropdown relative h-[100%]">
                                 <div
                                     role="button"
                                     onMouseEnter={() => {
                                         setOnClicked(true)
                                     }}
-                                    // onMouseLeave={() => {
-                                    //     setOnClicked(false)
-                                    // }}
+                                    onMouseLeave={() => {
+                                        setOnClicked(false)
+                                    }}
+                                    className="flex justify-center items-center h-[100%]"
                                     >
                                     <a className="flex items-center">News <BiChevronDown className="text-lg" /></a>
                                 </div>
@@ -88,7 +90,7 @@ const HeaderNav = ({ setShowMenu }) => {
                                         setOnClicked(false)
                                     }}
                                     >
-                                        <ul className="absolute uppercase top-10 z-50 -right-10 bg-white w-[240px] p-2 border-t-4 border-[#bf912d] shadow-md rounded-sm">
+                                        <ul className="absolute uppercase z-50 -right-6 bg-white w-[240px] p-2 border-t-4 border-[#bf912d] shadow-md rounded-sm">
                                             <li><a href="#">Politics</a></li>
                                             <li><a href="#">Technology</a></li>
                                             <li><a href="#">Gaming</a></li>

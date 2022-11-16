@@ -54,7 +54,7 @@ function VisualStoriesSlider() {
 
     const nextSlide = () => {
         if (currentIndex <= data.length - 5) {
-            setCurrentIndex(currentIndex + 2)
+            setCurrentIndex(currentIndex + 1)
         }
 
         console.log(currentIndex)
@@ -62,7 +62,7 @@ function VisualStoriesSlider() {
 
     const prevSlide = () => {
         if (currentIndex !== 0) {
-            setCurrentIndex(currentIndex - 2)
+            setCurrentIndex(currentIndex - 1)
         }
         console.log(currentIndex)
     }
@@ -90,10 +90,10 @@ function VisualStoriesSlider() {
 
             <div className="flex justify-between rounded-tl-lg rounded">
                 <div className="flex items-center gap-x-2">
-                    <p className="text-[#bf912d] font-semibold font-nunitoSans text-[22px]">VISUAL STORIES</p>
-                    <div className="h-[2px] w-[100px] rounded bg-[#bf912d]"></div>
+                    <p className="text-[#bf912d] font-semibold font-nunitoSans text-[16px] sm:text-[22px]">VISUAL STORIES</p>
+                    <div className="h-[2px] w-[80px] sm:w-[100px] rounded bg-[#bf912d]"></div>
                 </div>
-                <div className="text-[#bf912d] font-semibold font-nunitoSans flex items-center cursor-pointer">
+                <div className="text-[#bf912d] text-[12px] sm:text-[18px] font-semibold font-nunitoSans flex items-center cursor-pointer">
                     <p>VIEW ALL</p>
                     <FiChevronRight className="text-[18px]" />
                 </div>
@@ -107,8 +107,8 @@ function VisualStoriesSlider() {
             </div>
 
             <div className="w-[95vw] sm:w-[811px] h-[321px] mt-[13px] border-[1px] rounded-[6px] overflow-hidden scroll-smooth overflow-x-scroll  scrollbar-hide">
-                <div className="flex">
-                    <div className="h-[300px] bg-white my-2 p-[6px] flex gap-x-[12px] rounded">
+                <div className="flex w-[90vw]  overflowHidden">
+                    <div className="h-[300px] bg-white my-2 p-[6px] flex gap-x-[12px] rounded ">
                         {data.map((item, index) => {
                             return (
                                 <VisualStoriesItem

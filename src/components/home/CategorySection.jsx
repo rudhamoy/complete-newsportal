@@ -9,12 +9,12 @@ function CategorySection({ category }) {
             <div className="p-2">
                 <div className="flex justify-between items-center mb-[15px]">
                     <div className="flex items-center gap-x-2">
-                        <p className="font-nunitoSans text-[#bf912d]  text-[22px] font-semibold">{category}</p>
-                        <div className="h-[2.5px] w-[100px] rounded bg-[#bf912d]"></div>
+                        <p className="font-nunitoSans text-[#bf912d] text-[16px] sm:text-[22px] font-semibold">{category}</p>
+                        <div className="h-[2.5px] w-[60px] sm:w-[100px] rounded bg-[#bf912d]"></div>
                     </div>
                     <div className="flex items-center cursor-pointer">
-                        <p className="text-[#bf912d] font-semibold font-nunitoSans">READ ALL</p>
-                        < FiChevronRight className="text-[#bf912d] text-[25px]" />
+                        <p className="text-[#bf912d] text-[12px] sm:text-[18px] font-semibold font-nunitoSans">READ ALL</p>
+                        < FiChevronRight className="text-[#bf912d] text-[18px] sm:text-[25px]" />
                     </div>
                 </div>
                 <CategoryListItem width="810px" />
